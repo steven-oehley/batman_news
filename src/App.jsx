@@ -15,7 +15,9 @@ import Article from "./pages/Article";
 import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
-  const { data: articles, isLoading } = useFetch("/api/articles");
+  const { data: articles, isLoading } = useFetch(
+    "https://incandescent-gingersnap-f6d724.netlify.app/api/articles"
+  );
 
   return (
     <div className="App">
