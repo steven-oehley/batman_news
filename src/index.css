@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply text-yellow-500 border-b-2 border-yellow-500;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "BatmanForeverAlternate";
+  src: url("../src/assets/fonts/batman_forever/batmfa__.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BatmanForeverOutline";
+  src: url("../src/assets/fonts/batman_forever/batmfo__.ttf") format("truetype");
+}
+
+.batman-heading {
+  font-family: "BatmanForeverAlternate", sans-serif;
 }
