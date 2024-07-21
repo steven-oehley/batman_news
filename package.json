@@ -6,7 +6,8 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "json-server": "^1.0.0-beta.1",
+    "json-server": "^0.16.3",
+    "netlify-lambda": "^2.0.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
@@ -16,6 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build:lambda": "netlify-lambda build functions",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
