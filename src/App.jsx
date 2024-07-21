@@ -16,7 +16,7 @@ import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   const { data: articles, isLoading } = useFetch(
-    "https://incandescent-gingersnap-f6d724.netlify.app/api/articles"
+    "https://batman-news.netlify.app/api/articles"
   );
 
   return (
